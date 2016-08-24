@@ -37,25 +37,20 @@ int main(){
     std::string temp;
     while (ss >> temp)
         array.push_back(temp);
+    
 
+    for (int i = array.size()-3; i >= 0; i--) {
+        if (array[i].compare("+") == 0 || array[i].compare("-") == 0 || array[i].compare("*") == 0 || array[i].compare("/") == 0) {
 
-    while(array.size()>=3) {
+            int value = solve(array[i], std::stoi(array[i + 1]), std::stoi(array[i + 2]));
+            std::string str = std::to_string(value);
+            array[i] = str;
+            array.erase(array.begin()+i+2);
+            array.erase(array.begin()+i+1);
 
-        for (int i = array.size()-3; i >= 0; i--) {
-            if (array[i].compare("+") == 0 || array[i].compare("-") == 0 || array[i].compare("*") == 0 || array[i].compare("/") == 0) {
-
-                int value = solve(array[i], std::stoi(array[i + 1]), std::stoi(array[i + 2]));
-                std::string str = std::to_string(value);
-                array[i] = str;
-                array.erase(array.begin()+i+2);
-                array.erase(array.begin()+i+1);
-
-                break;
-            }
         }
-
     }
-
+    
     print_vector(array);
     return 0;
 }
