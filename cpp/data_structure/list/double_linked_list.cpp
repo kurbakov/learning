@@ -146,7 +146,7 @@ bool DoubleLinkedList::delete_node(Node *n) {
 bool DoubleLinkedList::find_node(Node *n) {
     Node *cur = first;
     while (cur != NULL){
-        if(cur == n)
+        if(cur->Next == n)
             return true;
         cur = cur->Next;
     }
