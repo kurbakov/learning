@@ -5,179 +5,174 @@
 
 
 // our new data type
-struct Node{
-    int data;
-    Node *next;
+struct Node
+{
+    int value;
+    Node *Next;
+
+    // constructor of struct
+    Node(int y)
+    {
+        value = y;
+        Next = NULL;
+    }
 };
 
-void create_list(struct Node *head, int x){
-    head->data = x;
-    head->next = NULL;
+
+class SingleLinkedList{
+private:
+    Node *first;
+    long long size;
+
+public:
+    SingleLinkedList();
+    ~SingleLinkedList();
+    void add_front(int x);
+    void add_back(int x);
+    void print_forward();
+    void delete_list();
+    long long get_size();
+    void reverse();
+    bool find_node(Node *n);
+    bool delete_node(Node *n);
+    bool make_circular();
+    bool detect_circular();
+};
+
+SingleLinkedList::SingleLinkedList() {
+    first = NULL;
+    size = 0;
 }
 
-void add_node(struct Node *head, int x){
-    Node* newNode = new Node;
-    newNode->data = x;
-    newNode->next = NULL;
+SingleLinkedList::~SingleLinkedList() {
+    delete_list();
+}
 
-    Node *cur = head;
-    while(cur) {
-        if(cur->next == NULL) {
-            cur->next = newNode;
-            return;
+void SingleLinkedList::add_front(int x) {
+    Node *n = new Node(x);
+    if(first == NULL){
+        first = n;
+    }
+    else{
+        n->Next = first;
+        first = n;
+    }
+    size += 1;
+}
+
+void SingleLinkedList::add_back(int x) {
+    Node *n = new Node(x);
+    if(first == NULL){
+        first = n;
+        size += 1;
+        return;
+    }
+    else{
+        Node *cur = first;
+        while(cur) {
+            if(cur->Next == NULL) {
+                cur->Next = n;
+                size += 1;
+                return;
+            }
+            cur = cur->Next;
         }
-        cur = cur->next;
     }
 }
 
-bool delete_node(struct Node **head, Node *ptrDel) {
-    Node *cur = *head;
-    if(ptrDel == *head) {
-        *head = cur->next;
-        delete ptrDel;
-        return true;
+void SingleLinkedList::print_forward() {
+    Node *cur = first;
+    while(cur != NULL){
+        std::cout << cur->value << " ";
+        cur = cur->Next;
     }
-
-    while(cur) {
-        if(cur->next == ptrDel) {
-            cur->next = ptrDel->next;
-            delete ptrDel;
-            return true;
-        }
-        cur = cur->next;
-    }
-    return false;
+    std::cout << std::endl;
 }
 
-void insert_front(struct Node **head, int n) {
-    Node *newNode = new Node;
-    newNode->data = n;
-    newNode->next = *head;
-    *head = newNode;
+void SingleLinkedList::delete_list() {
+    Node *cur = first;
+    while(cur != NULL){
+        Node *temp = cur;
+        cur = cur->Next;
+        delete temp;
+    }
+    first = NULL;
+    size = 0;
 }
 
-// true if was deleted and false if was not found
-bool search_node(struct Node *head, int n) {
-    Node *cur = head;
-    while(cur) {
-        if(cur->data == n)
-            return true;
-        cur = cur->next;
-    }
-    return false;
-}
-
-void delete_list(struct Node **node)
-{
-    struct Node *tmpNode;
-    while(*node) {
-        tmpNode = *node;
-        *node = tmpNode->next;
-        delete tmpNode;
-    }
-}
-
-// true is they are the same and false if different
-bool compare_lists(struct Node *node1, struct Node *node2)
-{
-
-    /* both lists are null and have no differences in nodes */
-    if(node1 == NULL && node2 == NULL) {
-        return true;
-    }
-
-    /* still have elements in the lists and need keep going*/
-    else {
-        if(node1 == NULL || node2 == NULL)
-            return false;
-        else if(node1->data != node2->data)
-            return false;
-        else
-            return compare_lists(node1->next, node2->next);
-    }
-}
-
-void print_list(struct Node *head) {
-    Node *list = head;
-    while(list) {
-        std::cout << list->data << " " << std::endl;
-        list = list->next;
-    }
-}
-
-void copy_list(struct Node *node, struct Node **pNew)
-{
-    if(node != NULL) {
-        *pNew = new Node;
-        (*pNew)->data = node->data;
-        (*pNew)->next = NULL;
-        copy_list(node->next, &((*pNew)->next));
-    }
-}
-
-int size_of_list(struct Node *head)
-{
-    Node *cur = head;
-    int size = 0;
-    while(cur) {
-        size++;
-        if(cur->next == NULL) {
-            return size;
-        }
-        cur = cur->next;
-    }
+long long SingleLinkedList::get_size() {
     return size;
 }
 
-void reverse(struct Node** head)
-{
-    Node *parent = *head;
-    Node *me = parent->next;
-    Node *child = me->next;
+void SingleLinkedList::reverse() {
+    Node *parent = first;
+    Node *me = parent->Next;
+    Node *child = me->Next;
 
     /* make parent as tail */
-    parent->next = NULL;
+    parent->Next = NULL;
     while(child) {
-        me->next = parent;
+        me->Next = parent;
         parent = me;
         me = child;
-        child = child->next;
+        child = child->Next;
     }
-    me->next = parent;
-    *head = me;
+    me->Next = parent;
+    first = me;
 }
 
-bool makeCircular(struct Node* head)
-{
-    if(head->next==NULL)
-        return false;
-
-    Node *cur = head;
-    while(cur) {
-        if(cur->next == NULL) {
-            cur->next = head;
+bool SingleLinkedList::delete_node(Node *n) {
+    Node *cur = first;
+    while(cur != NULL){
+        if(cur->Next == n) {
+            cur->Next = n->Next;
+            delete n;
             return true;
         }
-        cur = cur->next;
+        cur = cur->Next;
     }
     return false;
 }
 
-bool detect_circular(struct Node* head)
-{
+bool SingleLinkedList::find_node(Node *n) {
+    Node *cur = first;
+    while (cur != NULL){
+        if(cur->Next == n)
+            return true;
+        cur = cur->Next;
+    }
+    return false;
+}
 
-    if(head->next == NULL)
+bool SingleLinkedList::make_circular() {
+    if(first->Next==NULL)
         return false;
 
-    Node *ptr1 = head;
-    Node *ptr2 = head;
+    Node *cur = first;
+    while(cur) {
+        if(cur->Next == NULL) {
+            cur->Next = first;
+            return true;
+        }
+        cur = cur->Next;
+    }
+    return false;
+}
 
-    while(ptr1->next != NULL && ptr2->next != NULL) {
+bool SingleLinkedList::detect_circular() {
 
-        ptr1 = ptr1->next;
-        ptr2 = ptr2->next;
+    if(first->Next == NULL)
+        return false;
+
+    Node *ptr1 = first;
+    Node *ptr2 = first;
+
+    while(ptr1->Next != NULL && ptr2->Next != NULL) {
+
+        ptr1 = ptr1->Next;
+        ptr2 = ptr2->Next;
         if(ptr2) {
-            ptr2 = ptr2->next;
+            ptr2 = ptr2->Next;
             if(!ptr2)
                 return false;
         }
@@ -192,48 +187,22 @@ bool detect_circular(struct Node* head)
     return false;
 }
 
-
-
 //=====================================================================
 
 int main(){
-    Node *head = new Node;
+    SingleLinkedList *my_list = new SingleLinkedList();
+    my_list->add_back(1);
+    my_list->add_back(10);
+    my_list->add_back(100);
+    my_list->add_front(0);
+    my_list->print_forward();
+    std::cout << "the size is: " << my_list->get_size() << std::endl;
 
-    create_list(head, 10);
-    add_node(head,30);
-    add_node(head,35);
+    my_list->reverse();
+    my_list->print_forward();
 
-    insert_front(&head,5);
-    delete_node(&(head), head->next);
+    my_list->delete_list();
 
-    print_list(head);
-    std::cout << "result: " << search_node(head, 5) << std::endl;
-
-    Node *newHead = new Node;
-    copy_list(head,&newHead);
-
-    delete_list(&head);
-    print_list(newHead);
-
-    Node *newHead_copy = new Node;
-    copy_list(newHead, &newHead_copy);
-
-    std::cout << "results of compare is: " << compare_lists(newHead, newHead_copy) << std::endl;
-
-    Node *reverse_list = new Node;
-    copy_list(newHead, &reverse_list);
-    reverse(&reverse_list);
-
-    print_list(reverse_list);
-    std::cout << "results of compare is: " << compare_lists(newHead, reverse_list) << std::endl;
-
-    delete_list(&reverse_list);
-    delete_list(&newHead_copy);
-
-    std::cout << "the size of the list: " << size_of_list(newHead) << std::endl;
-    std::cout << "is the list cycled: " << detect_circular(newHead) << std::endl;
-    makeCircular(newHead);
-    std::cout << "is the list cycled: " << detect_circular(newHead) << std::endl;
 
     return 0;
 }
