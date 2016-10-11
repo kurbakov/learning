@@ -6,15 +6,15 @@
 ......................STILL IN PROGRESS................................
 */
 
-
 // https://en.wikipedia.org/wiki/Red%E2%80%93black_tree
 // https://www.cs.cmu.edu/~fp/courses/15122-f10/lectures/17-rbtrees.pdf
+
 struct Node{
     Node* parent;
     int data;
     char color;
-    Node* lower;
-    Node* higher;
+    Node* lower;    /* left     */
+    Node* higher;   /* right    */
 
     Node(int i){
         parent = NULL;
@@ -29,7 +29,7 @@ class Set{
 private:
     Node* root;
     unsigned long set_size;
-    void rebalance_tree(Node*);
+    void rebalance_tree_insert(Node*);
     void turn_left(Node*);
     void turn_right(Node*);
 
@@ -51,6 +51,7 @@ Set::Set() {
     root = NULL;
     set_size = 0;
 }
+
 Set::~Set() {
     destroy_set();
 }
@@ -94,10 +95,10 @@ void Set::insert(int i) {
 
         set_size += 1;
     }
-    rebalance_tree(n);
+    rebalance_tree_insert(n);
 }
 
-void Set::rebalance_tree(Node *n) {
+void Set::rebalance_tree_insert(Node *n) {
     if(n == root){
         n->color = 'b';
         return;
@@ -140,7 +141,7 @@ void Set::turn_left(Node *z){
     else
         temp->lower = y;
 
-    rebalance_tree(y);
+    rebalance_tree_insert(y);
 
 }
 
@@ -167,7 +168,7 @@ void Set::turn_right(Node *y){
     else
         temp->lower = y;
 
-    rebalance_tree(y);
+    rebalance_tree_insert(y);
 }
 
 
@@ -229,8 +230,98 @@ void Set::delete_node(int i) {
     Node *cur = root;
     while(cur != NULL) {
         if (cur->data == i) {
-            // delete operation
-            // rebalance operation
+            /*
+             source: https://www.youtube.com/watch?v=CTvfzU_uNKE
+
+            delete operation is more complex
+            there can be different cases for deletion
+
+            case 1: node red without childrens:
+            just delete the node without any other actions
+
+            case 2: delete red or black node with 1 child
+            case 2.1: node red with 1 black children:
+            just delete the node without any other actions
+
+            case 2.2: node is black with 1 red child:
+            delete black and change the color of red to black
+
+            case 3: node is red or black with 2 not-null children-nodes
+            find the successor (the smallest value in the highest subtree)
+            and replace the node to be deleted by successor. then delete the successor
+
+            case 4:  delete black without children: double black cases (6 cases):
+
+            1. double black is root
+            just keep the root black and nothing else
+
+
+            2. rotation is needed
+            Initial:
+                parent: black
+                sibling is red
+                siblings children are black
+            After transformation:
+                drandparent: black
+                parent: red
+                uncle: black
+                brother: black
+
+                    after the trunsformation we still have a double black node
+                    next actions are required -> case 1,2,3,4,5,6
+                
+
+            3.
+            Initial:
+            parent: black
+            sibling is black
+            siblings children are black
+            After transformation:
+            parent: double balck !!! next action are required -> case 1,2,3,4,5,6
+            sibling is red
+            siblings children are black
+
+
+            4.
+            Initial:
+            parent:	red
+            sibling is black
+            siblings children are black
+            After transformation:
+            parent: black
+            sibling is red
+            siblings children are black
+
+
+            5. rotation is needed
+            Initial:
+            parent: black
+            sibling is black
+            siblings children are right black and left red
+            After transformation:
+            parent: black
+            sibling is red
+            siblings children we take the left and put it under the right child
+
+                rotation is only for the part where no double black
+                we make the line of nodes
+                colors: black (P), black (S), red (SC-r), black (SC-l)
+                next action are required -> case 1,2,3,4,5,6
+
+
+
+            6. rotation is needed
+            Initial:
+            parent: does not metter
+            sibling is black
+            siblings children are left - does not metter, right is red
+            After transformation:
+            parent:
+            sibling is
+            siblings children
+
+            * */
+
             return;
         } else if (i > cur->data) {
             cur = cur->higher;
