@@ -1,3 +1,5 @@
+// https://codility.com/media/train/solution-min-abs-sum.pdf
+
 #include "iostream"
 #include "vector"
 #include "algorithm"
