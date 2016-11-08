@@ -8,7 +8,6 @@ https://habrahabr.ru/company/yandex/blog/206234/
 
 data structure:
 - graph
-- smart pointer
 - heap
   - https://en.wikipedia.org/wiki/Heap_(data_structure)
 
@@ -19,9 +18,11 @@ language design:
 - rule of 3/5 (destructor+copy constructor+...) 
   - https://en.wikipedia.org/wiki/Rule_of_three_(C%2B%2B_programming)
   - https://www.tutorialspoint.com/cplusplus/cpp_copy_constructor.htm
+  - http://cppstudio.com/post/9903/
 - operator overloading
 - https://en.wikipedia.org/wiki/Shunting-yard_algorithm
 - https://en.wikipedia.org/wiki/LR_parser
+- http://cppstudio.com/post/10103/ 
 
 
 Be ready to do the following tasks (http://it.icmp.ru/post/view/4549):
