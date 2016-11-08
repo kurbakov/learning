@@ -1,10 +1,6 @@
 some useful links:
 
-https://geekwentfreak-raviteja.rhcloud.com/blog/2014/08/09/c-shared_ptr-implementation-for-fun/
-
 http://blog.trsquarelab.com/2015/02/smart-pointer-implementation-in-c.html
-
-file:///Users/dmytrokurbakov/Downloads/smart_pointers.pdf
 
 https://courses.cs.washington.edu/courses/cse333/12su/lectures/lec13.pdf
 
