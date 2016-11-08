@@ -23,3 +23,5 @@ http://geekwentfreak.com/posts/c/shared_ptr_impl_fun/  <- !!!!!
 http://www.openguru.com/2015/07/a-simple-sharedptr-implementation-in-c.html <- !!!!
 
 http://www.umich.edu/~eecs381/handouts/C++11_smart_ptrs.pdf <- READ IT FIRST
+
+https://github.com/Evgeny-Bukovski/ForStudentsLearningCpp/blob/master/Pointers/SmartPointer-Part2.cpp
