@@ -1,6 +1,8 @@
 #include "iostream"
 #include "map"
 #include "set"
+#include "stack"
+#include "queue"
 
 // bi-directed unweighted graph (simplest form)
 class Graph{
@@ -11,28 +13,31 @@ public:
     Graph();
     ~Graph();
 
-    void add_vertice(char);
+    void add_vertex(char);
     void add_edge(char, char);
-    void delete_vertice(char);
+    void delete_vertex(char);
     void delete_edge(char, char);
 
-    bool exists_vertice(char);
+    bool exists_vertex(char);
     bool exists_edge(char, char);
 
     void destroy_graph();
+
+    void dfs(char);
+    void bfs(char);
 };
 
 Graph::Graph() {}
 Graph::~Graph() {destroy_graph();}
 
-void Graph::add_vertice(char vertice) {
-    std::map<char, std::set<char> >::iterator it = graph.find(vertice);
+void Graph::add_vertex(char vertex) {
+    std::map<char, std::set<char> >::iterator it = graph.find(vertex);
 
     if(it != graph.end())
         return;
 
     std::set<char> v;
-    graph[vertice] = v;
+    graph[vertex] = v;
 }
 
 void Graph::add_edge(char v_1, char v_2) {
@@ -45,7 +50,7 @@ void Graph::add_edge(char v_1, char v_2) {
     }
 }
 
-void Graph::delete_vertice(char vertice) {
+void Graph::delete_vertex(char vertice) {
     std::map<char, std::set<char> >::iterator it = graph.find(vertice);
 
     if(it == graph.end())
@@ -75,7 +80,7 @@ void Graph::delete_edge(char v_1, char v_2) {
     it_map->second.erase(it_set);
 }
 
-bool Graph::exists_vertice(char vertice) {
+bool Graph::exists_vertex(char vertice) {
     std::map<char, std::set<char> >::iterator it;
 
     it = graph.find(vertice);
@@ -109,21 +114,81 @@ void Graph::destroy_graph() {
     graph.clear();
 }
 
+// https://www.youtube.com/watch?v=iaBEKo5sM7w
+void Graph::dfs(char v) {
+    std::stack<char> stack;
+    std::map<char, bool> visited_nodes;
+
+    std::map<char, std::set<char> >::iterator it_map;
+    std::set<char>::iterator it_set;
+
+    for(it_map=graph.begin(); it_map!=graph.end(); it_map++)
+        visited_nodes[it_map->first] = false;
+
+    stack.push(v);
+    visited_nodes[v] = true;
+
+    while (!stack.empty()){
+        v = stack.top();
+        std::cout << v << " ";
+        stack.pop();
+
+        for(it_set = graph[v].begin(); it_set!= graph[v].end(); it_set++){
+            if(visited_nodes[*it_set] == false){
+                visited_nodes[*it_set] = true;
+                stack.push(*it_set);
+            }
+        }
+    }
+    std::cout << std::endl;
+}
+
+// http://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/
+void Graph::bfs(char v) {
+    std::queue<char> queue;
+    std::map<char, bool> visited_nodes;
+
+    std::map<char, std::set<char> >::iterator it_map;
+    std::set<char>::iterator it_set;
+
+    for(it_map=graph.begin(); it_map!=graph.end(); it_map++)
+        visited_nodes[it_map->first] = false;
+
+    queue.push(v);
+    visited_nodes[v] = true;
+
+    while(!queue.empty()){
+        v = queue.front();
+        std::cout << v << " ";
+        queue.pop();
+
+        for(it_set = graph[v].begin(); it_set != graph[v].end(); it_set++){
+            if(visited_nodes[*it_set] == false){
+                visited_nodes[*it_set] = true;
+                queue.push(*it_set);
+            }
+        }
+    }
+    std::cout << std::endl;
+}
 
 int main(){
 
     Graph g;
 
-    g.add_vertice('a');
-    std::cout << g.exists_vertice('a') << std::endl;
+    g.add_vertex('a');
+    std::cout << g.exists_vertex('a') << std::endl;
 
-    g.delete_vertice('a');
-    std::cout << g.exists_vertice('a') << std::endl;
+    g.delete_vertex('a');
+    std::cout << g.exists_vertex('a') << std::endl;
 
-    g.add_vertice('a');
-    g.add_vertice('b');
+    g.add_vertex('a');
+    g.add_vertex('b');
     g.add_edge('a', 'b');
     std::cout << g.exists_edge('a', 'b') << std::endl;
+
+    g.dfs('a');
+    g.bfs('a');
 
     g.delete_edge('a', 'b');
     std::cout << g.exists_edge('a', 'b') << std::endl;
