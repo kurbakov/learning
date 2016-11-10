@@ -23,6 +23,7 @@ language design:
 - https://en.wikipedia.org/wiki/Shunting-yard_algorithm
 - https://en.wikipedia.org/wiki/LR_parser
 - http://cppstudio.com/post/10103/ 
+- https://tproger.ru/translations/design-patterns-for-beginners/
 
 
 Be ready to do the following tasks (http://it.icmp.ru/post/view/4549):
