@@ -124,7 +124,7 @@ int main() {
     // Create a graph given in the above diagram
     Graph g(5);
     
-    // Edding edges to the graph
+    // Adding edges to the graph
     g.addEdge(1, 0);
     g.addEdge(0, 2);
     g.addEdge(2, 1);
