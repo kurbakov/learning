@@ -9,8 +9,5 @@ List of literature:
 
 
 To Do:
-- Depth-First Search (DFS)
-- Breadth-First Search (BFS)
 - Minimum Spanning Tree (MST)
-- Strongly Connected Components (SCC)
-- Shortest path
+- Topological sort
