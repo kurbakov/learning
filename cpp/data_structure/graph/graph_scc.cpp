@@ -82,8 +82,7 @@ void Graph::fillOrder(int v, bool visited[], std::stack<int> &Stack) {
     Stack.push(v);
 }
 
-// The main function that finds and prints all strongly connected
-// components
+// The main function that finds and prints all strongly connected components
 void Graph::printSCCs() {
     std::stack<int> Stack;
 
