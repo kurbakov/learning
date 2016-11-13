@@ -7,7 +7,6 @@ todo:
 https://habrahabr.ru/company/yandex/blog/206234/
 
 data structure:
-- graph
 - heap
   - https://en.wikipedia.org/wiki/Heap_(data_structure)
 
