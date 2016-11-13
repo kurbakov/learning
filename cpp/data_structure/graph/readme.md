@@ -10,4 +10,3 @@ List of literature:
 
 To Do:
 - Minimum Spanning Tree (MST)
-- Topological sort
