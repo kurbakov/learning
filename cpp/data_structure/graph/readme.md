@@ -6,3 +6,4 @@ List of literature:
 - https://www.tutorialspoint.com/parallel_algorithm/graph_algorithm.htm
 - http://codeforces.com/blog/entry/16221
 - Skiena (book) is very good!!!
+- http://www.geeksforgeeks.org/fundamentals-of-algorithms/#GraphAlgorithms
