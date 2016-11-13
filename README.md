@@ -1,29 +1,29 @@
 # project_y
 
-my free time
+next steps 
 
-todo:
-
-https://habrahabr.ru/company/yandex/blog/206234/
-
-data structure:
-- heap
-  - https://en.wikipedia.org/wiki/Heap_(data_structure)
-
-
-language design:
-
-- parallel computation and thread blocks
-- rule of 3/5 (destructor+copy constructor+...) 
-  - https://en.wikipedia.org/wiki/Rule_of_three_(C%2B%2B_programming)
-  - https://www.tutorialspoint.com/cplusplus/cpp_copy_constructor.htm
-  - http://cppstudio.com/post/9903/
+(week 46):
 - operator overloading
+- copy, deep copy
+- rule of 3/5
+
+(week 47):
+- Inheritance http://cppstudio.com/post/10103/
+- multithreading and blocks
+- design patterns
+
+(week 48):
+- cleen git and write documentation
+- heap data structure
+- radix-sort
+
+/*======================================*/
+
+notes:
+- https://habrahabr.ru/company/yandex/blog/206234/
 - https://en.wikipedia.org/wiki/Shunting-yard_algorithm
 - https://en.wikipedia.org/wiki/LR_parser
-- http://cppstudio.com/post/10103/ 
 - https://tproger.ru/translations/design-patterns-for-beginners/
-
 
 Be ready to do the following tasks (http://it.icmp.ru/post/view/4549):
 - Сначала надо написать класс, унаследовать от него другой класс – это разминка. 
