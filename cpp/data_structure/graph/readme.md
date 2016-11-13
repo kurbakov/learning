@@ -5,6 +5,7 @@ List of literature:
 - http://www-users.cs.umn.edu/~karypis/parbook/Lectures/AG/chap10_slides.pdf
 - https://www.tutorialspoint.com/parallel_algorithm/graph_algorithm.htm
 - http://codeforces.com/blog/entry/16221
+- Skiena (book) is very good!!!
 
 
 
