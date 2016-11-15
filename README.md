@@ -3,8 +3,10 @@
 next steps 
 
 (week 46):
-- operator overloading
+- operator overloading (done)
 - copy, deep copy
+  - http://www.learncpp.com/cpp-tutorial/911-the-copy-constructor/
+  - http://www.learncpp.com/cpp-tutorial/915-shallow-vs-deep-copying/
 - rule of 3/5
 
 (week 47):
