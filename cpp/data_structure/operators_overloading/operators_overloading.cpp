@@ -24,6 +24,8 @@ public:
     /* incremental and decremental */
     Data& operator++();
     Data& operator--();
+    Data& operator++(int){return operator++();}
+    Data& operator--(int){return operator--();}
 
     /* comparison operators */
     friend bool operator >  (const Data&, const Data&);
