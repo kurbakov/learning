@@ -1,3 +1,6 @@
+// http://www.learncpp.com/cpp-tutorial/911-the-copy-constructor/
+// http://www.learncpp.com/cpp-tutorial/915-shallow-vs-deep-copying/
+
 #include "cstring"
 #include "iostream"
 
