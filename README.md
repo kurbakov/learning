@@ -3,7 +3,7 @@
 next steps 
 
 (week 47):
-- Inheritance http://cppstudio.com/post/10103/
+- Inheritance (done)
 - multithreading and blocks
 - design patterns
   - https://tproger.ru/translations/design-patterns-for-beginners/
