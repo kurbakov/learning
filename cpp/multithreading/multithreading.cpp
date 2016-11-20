@@ -1,10 +1,12 @@
 #include "iostream"
 #include "thread"
+#include "vector"
+#include "mutex"
 
 // Define global variables
 static const int N_THREADS = 4;
 std::vector<int> VECTOR;
-std::mutex M;
+std::mutex my_mutex;
 
 /*=================================================*/
 // test print function
@@ -24,7 +26,7 @@ void run_parallel_print(std::string msg){
 
     // put to each element of an array some function
     for (int i = 0; i < N_THREADS; ++i)
-        t[i] = std::thread(print, "a lot of threads are here!");
+        t[i] = std::thread(print, msg);
 
     // join all threads
     for (int i = 0; i < N_THREADS; ++i)
@@ -36,17 +38,16 @@ void run_parallel_print(std::string msg){
 /*=================================================*/
 // test function with changing some element in vector
 void compute(int i){
-    M.lock();
+    std::lock_guard<std::mutex> guard(my_mutex);
     VECTOR[i] = VECTOR[i]*VECTOR[i] + 100;
-    M.unlock();
 }
 
 void run_parallel_compute(){
     std::thread t[N_THREADS];
-    for (int i = 0; i < N_THREADS; ++i)
+    for (int i = 0; i < N_THREADS; i++)
         t[i] = std::thread(compute, i);
 
-    for (int i = 0; i < N_THREADS; ++i)
+    for (int i = 0; i < N_THREADS; i++)
         t[i].join();
 
     return;
@@ -54,8 +55,17 @@ void run_parallel_compute(){
 
 int main(){
 
-    run_in_single_thread("one thread");
+    run_in_single_thread_print("one thread");
     run_parallel_print("many threads are here");
+
+    for(int i = 0; i<N_THREADS; i++)
+        VECTOR.push_back(i);
+
+    run_parallel_compute();
+
+    for(int i = 0; i<N_THREADS; i++)
+        std::cout << VECTOR[i] << " ";
+    std::cout << std::endl;
 
     return 0;
 }
