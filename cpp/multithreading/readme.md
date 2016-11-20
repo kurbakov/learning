@@ -1,0 +1,4 @@
+- https://solarianprogrammer.com/2011/12/16/cpp-11-thread-tutorial/
+- https://solarianprogrammer.com/2012/02/27/cpp-11-thread-tutorial-part-2/
+- https://www.tutorialcup.com/cplusplus/multithreading.htm
+- Williams, C++ concurency in action. Practical multithreading.
