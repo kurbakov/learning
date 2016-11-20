@@ -3,7 +3,8 @@
 next steps 
 
 (week 47):
-- Inheritance (done)
+- keywords
+- lambda-functions
 - multithreading and blocks
 - design patterns
   - https://tproger.ru/translations/design-patterns-for-beginners/
