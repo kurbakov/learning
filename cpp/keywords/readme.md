@@ -17,6 +17,11 @@ http://en.cppreference.com/w/cpp/keyword/explicit
 
 Definition:
 
+### extern
+http://en.cppreference.com/w/cpp/keyword/extern
+
+Definition: 
+
 ### final
 http://en.cppreference.com/w/cpp/language/final
 
@@ -47,10 +52,15 @@ http://en.cppreference.com/w/cpp/language/override
 
 Definition:
 
+### register
+http://en.cppreference.com/w/cpp/keyword/register
+
+Definition: request that a variable be optimized for speed
+
 ### static
 http://en.cppreference.com/w/cpp/keyword/static
 
-Definition:
+Definition: create permanent storage for a variable
 
 ### this
 http://en.cppreference.com/w/cpp/keyword/this
