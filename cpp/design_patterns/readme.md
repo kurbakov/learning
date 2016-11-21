@@ -1,0 +1,3 @@
+- http://www.williamspublishing.com/PDF/5-8459-0301-7/part3.pdf
+- https://habrahabr.ru/post/210288/
+- http://cpp-reference.ru/patterns/
