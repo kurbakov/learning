@@ -3,11 +3,8 @@
 next steps 
 
 (week 47):
-- keywords
-- lambda-functions
-- multithreading and blocks
-- design patterns
-  - https://tproger.ru/translations/design-patterns-for-beginners/
+- lambda-functions: [link](http://en.cppreference.com/w/cpp/language/lambda)
+- design patterns 
 
 (week 48):
 - cleen git and write documentation
