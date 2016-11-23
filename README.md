@@ -23,4 +23,3 @@ Be ready to do the following tasks (http://it.icmp.ru/post/view/4549):
 - копирующих конструкторов, копирующих операторов присваивания, для классов с кучей указателей на другие объекты (deep copy)
 - алгоритм скажем radix-sort: https://en.wikipedia.org/wiki/Radix_sort http://www.geeksforgeeks.org/radix-sort/
 - https://xakep.ru/2014/02/14/jobinterview-tasks-181/
-- keywords (friend, const, noexcept, virtual, override)
