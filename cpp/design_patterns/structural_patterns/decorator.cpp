@@ -1,0 +1,102 @@
+// Source: http://cpp-reference.ru/patterns/structural-patterns/decorator/
+
+/*
+ Вы хотите добавить новые обязанности в поведении или состоянии отдельных объектов во время
+ выполнения программы. Использование наследования не представляется возможным, поскольку это
+ решение статическое и распространяется целиком на весь класс.
+
+ Назначение паттерна Decorator
+    - Паттерн Decorator динамически добавляет новые обязанности объекту. Декораторы
+    являются гибкой альтернативой порождению подклассов для расширения функциональности.
+    - Рекурсивно декорирует основной объект.
+    - Паттерн Decorator использует схему "обертываем подарок, кладем его в коробку,
+    обертываем коробку".
+*/
+
+// example
+
+#include <iostream>
+using namespace std;
+
+// 1. " Наименьший общий знаменатель"
+class Widget
+{
+public:
+    virtual void draw() = 0;
+};
+
+// 3. Основной класс, использующий отношение "является"
+class TextField: public Widget
+{
+    int width, height;
+public:
+    TextField(int w, int h)
+    {
+        width = w;
+        height = h;
+    }
+
+    /*virtual*/
+    void draw()
+    {
+        cout << "TextField: " << width << ", " << height << '\n';
+    }
+};
+
+// 2. Базовый класс второго уровня
+class Decorator: public Widget  // 3. использует отношение "является"
+{
+    Widget *wid; // 4. отношение "имеет"
+public:
+    Decorator(Widget *w)
+    {
+        wid = w;
+    }
+
+    /*virtual*/
+    void draw()
+    {
+        wid->draw(); // 5. делегирование
+    }
+};
+
+// 6. Дополнительное декорирование
+class BorderDecorator: public Decorator
+{
+public:
+    BorderDecorator(Widget *w): Decorator(w){}
+
+    /*virtual*/
+    void draw()
+    {
+        // 7. Делегирование базовому классу и
+        Decorator::draw();
+        // 7. реализация дополнительной функциональности
+        cout << "   BorderDecorator" << '\n';
+    }
+};
+
+// 6. Дополнительное декорирование
+class ScrollDecorator: public Decorator
+{
+public:
+    ScrollDecorator(Widget *w): Decorator(w){}
+
+    /*virtual*/
+    void draw()
+    {
+        // 7. Delegate to base class and add extra stuff
+        Decorator::draw();
+        cout << "   ScrollDecorator" << '\n';
+    }
+};
+
+int main()
+{
+    // 8. Клиент ответственен за конфигурирование нужной функциональности
+    Widget *aWidget = new BorderDecorator(
+            new BorderDecorator(
+                    new ScrollDecorator
+                            (new TextField(80, 24))));
+    aWidget->draw();
+}
