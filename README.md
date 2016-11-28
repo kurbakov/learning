@@ -5,6 +5,7 @@ next steps
 (week 47):
 - lambda-functions: [link](http://en.cppreference.com/w/cpp/language/lambda)
 - design patterns 
+- delegation [link](https://en.wikipedia.org/wiki/Delegation_(object-oriented_programming))
 
 (week 48):
 - cleen git and write documentation
