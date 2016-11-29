@@ -2,15 +2,13 @@
 
 next steps 
 
-(week 47):
-- lambda-functions: [link](http://en.cppreference.com/w/cpp/language/lambda)
-- design patterns 
+(current week):
 - delegation [link](https://en.wikipedia.org/wiki/Delegation_(object-oriented_programming))
 - unit tests
   - http://gamesfromwithin.com/exploring-the-c-unit-testing-framework-jungle
   - https://accu.org/index.php/journals/1326
 
-(week 48):
+(next week):
 - cleen git and write documentation
 - heap data structure
 - radix-sort
