@@ -3,7 +3,6 @@
 next steps 
 
 (current week):
-- delegation [link](https://en.wikipedia.org/wiki/Delegation_(object-oriented_programming))
 - unit tests
   - http://gamesfromwithin.com/exploring-the-c-unit-testing-framework-jungle
   - https://accu.org/index.php/journals/1326
