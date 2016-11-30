@@ -9,7 +9,6 @@ next steps
 
 (next week):
 - cleen git and write documentation
-- heap data structure
 - radix-sort
 
 /*======================================*/
