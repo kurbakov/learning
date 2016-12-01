@@ -4,19 +4,16 @@
 #include "vector"
 
 void counting_sort(std::vector<int>& v, int exp){
-    
-    // Find the maximum number to know number of digits
-    int max_value = v[0];
-    for(unsigned int i=1; i<v.size(); i++)
-        if(v[i]> max_value)
-            max_value = v[i];
 
+    // sorted array (in the future sorted)
     std::vector<int> output(v.size());
-    std::vector<int> count(max_value+1,0);
+    
+    // count if made only in the range 0,...,9
+    std::vector<int> count(10,0);
 
-    // step 3: count elements
+    // count elements
     for(unsigned int i=0;i<v.size();i++)
-        count[v[i]/exp]++;
+        count[ (v[i]/exp)%10 ]++;
 
     // rebuild index vector to make it incremental
     for(unsigned int i=1;i<count.size();i++)
