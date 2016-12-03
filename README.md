@@ -85,7 +85,28 @@ CODILITY: directory to store the solution of codility tasks
     | -- NumberSolitaire [task](https://codility.com/programmers/lessons/17-dynamic_programming/number_solitaire/), [solution](https://github.com/kurbakov/project_y/blob/master/codility/lesson17/NumberSolitaire.cpp)  
     | -- MinAbsSum [task](https://codility.com/programmers/lessons/17-dynamic_programming/min_abs_sum/), [solution](https://github.com/kurbakov/project_y/blob/master/codility/lesson17/MinAbsSum.cpp)  
   
-CPP:
+CPP: directory to learn C++
+  
+  - algorithms (path to store ome basic algorithms)  
+    | - sorting algorithms [link](https://github.com/kurbakov/project_y/tree/master/cpp/algorithms/sort)  
+    | - search algorithm [link](https://github.com/kurbakov/project_y/tree/master/cpp/algorithms/search)  
+    
+  - data_structure (path to store main data types. created to better understand the data types)  
+    | - graph [link]()  
+    | - hash_table [link]()  
+    | - heap [link]()  
+    | - inheritance [link]()  
+    | - list [link]()  
+    | - operators_overloading [link]()  
+    | - set_map [link]()  
+    | - smart_pointer [link]()  
+    | - stack_queue [link]()  
+    
+  - delegation (how to implement a deligation inside the class OOP consept)
+  - design_patterns (different desing patterns, also related to OOP)
+  - keywords (main keywords and how to use it and when you should use it)
+  - lambda_function (C++11 new feature of the language)
+  - multithreading (dasic file how to run parrallel computation. "mutex" and "thread" libraries)
 
 YANDEX_TASK
 
