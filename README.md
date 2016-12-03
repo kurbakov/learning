@@ -156,7 +156,7 @@
 - boost library
 
 
-/*======================================*/
+/*======================================*/  
 notes:
 - https://habrahabr.ru/company/yandex/blog/206234/
 - https://en.wikipedia.org/wiki/Shunting-yard_algorithm
