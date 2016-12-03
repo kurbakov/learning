@@ -113,15 +113,44 @@
     
   - **delegation** (how to implement a deligation inside the class OOP consept)
   - **design_patterns** (different desing patterns, also related to OOP)
+    | - behavioral_pattern  
+      -> chain_of_responsibility [link](https://github.com/kurbakov/project_y/blob/master/cpp/design_patterns/behavioral_pattern/chain_of_responsibility.cpp)  
+      -> command [link](https://github.com/kurbakov/project_y/blob/master/cpp/design_patterns/behavioral_pattern/command.cpp)  
+      -> interpreter [link](https://github.com/kurbakov/project_y/blob/master/cpp/design_patterns/behavioral_pattern/interpreter.cpp)  
+      -> iterator [link](https://github.com/kurbakov/project_y/blob/master/cpp/design_patterns/behavioral_pattern/iterator.cpp)  
+      -> mediator [link](https://github.com/kurbakov/project_y/blob/master/cpp/design_patterns/behavioral_pattern/mediator.cpp)  
+      -> memento [link](https://github.com/kurbakov/project_y/blob/master/cpp/design_patterns/behavioral_pattern/memento.cpp)  
+      -> observer [link](https://github.com/kurbakov/project_y/blob/master/cpp/design_patterns/behavioral_pattern/observer.cpp)  
+      -> state [link](https://github.com/kurbakov/project_y/blob/master/cpp/design_patterns/behavioral_pattern/state.cpp)  
+      -> strategy [link](https://github.com/kurbakov/project_y/blob/master/cpp/design_patterns/behavioral_pattern/strategy.cpp)  
+      -> template_method [link](https://github.com/kurbakov/project_y/blob/master/cpp/design_patterns/behavioral_pattern/template_method.cpp)  
+      -> visitor [link](https://github.com/kurbakov/project_y/blob/master/cpp/design_patterns/behavioral_pattern/visitor.cpp)  
+      
+    | - creational_pattern  
+      -> abstract_factory [link](https://github.com/kurbakov/project_y/blob/master/cpp/design_patterns/creational_pattern/abstract_factory.cpp)  
+      -> builder [link](https://github.com/kurbakov/project_y/blob/master/cpp/design_patterns/creational_pattern/builder.cpp)  
+      -> factory_method [link](https://github.com/kurbakov/project_y/blob/master/cpp/design_patterns/creational_pattern/factory_method.cpp)  
+      -> prototype [link](https://github.com/kurbakov/project_y/blob/master/cpp/design_patterns/creational_pattern/prototype.cpp)  
+      -> singleton [link](https://github.com/kurbakov/project_y/blob/master/cpp/design_patterns/creational_pattern/singleton.cpp)  
+      
+    | - structural_patterns  
+      -> adapter [link](https://github.com/kurbakov/project_y/blob/master/cpp/design_patterns/structural_patterns/adapter.cpp)  
+      -> bridge [link](https://github.com/kurbakov/project_y/blob/master/cpp/design_patterns/structural_patterns/bridge.cpp)  
+      -> composite [link](https://github.com/kurbakov/project_y/blob/master/cpp/design_patterns/structural_patterns/composite.cpp)  
+      -> decorator [link](https://github.com/kurbakov/project_y/blob/master/cpp/design_patterns/structural_patterns/decorator.cpp)  
+      -> facade [link](https://github.com/kurbakov/project_y/blob/master/cpp/design_patterns/structural_patterns/facade.cpp)  
+      -> flyweight [link](https://github.com/kurbakov/project_y/blob/master/cpp/design_patterns/structural_patterns/flyweight.cpp)  
+      -> proxy [link](https://github.com/kurbakov/project_y/blob/master/cpp/design_patterns/structural_patterns/proxy.cpp)  
+    
   - **keywords** (main keywords and how to use it and when you should use it)
   - **lambda_function** (C++11 new feature of the language)
-  - **multithreading** (dasic file how to run parrallel computation. "mutex" and "thread" libraries)
+  - **multithreading** (basic file how to run parrallel computation. "mutex" and "thread" libraries)
 
 ## YANDEX_TASK
   - this is my solution of the task from Yandex Inc.
 
 
-next steps 
+## next steps 
 - metaprogramming
 - multiproc. computations and multithreading
 - boost library
