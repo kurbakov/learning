@@ -142,12 +142,16 @@
       -> flyweight [link](https://github.com/kurbakov/project_y/blob/master/cpp/design_patterns/structural_patterns/flyweight.cpp)  
       -> proxy [link](https://github.com/kurbakov/project_y/blob/master/cpp/design_patterns/structural_patterns/proxy.cpp)  
     
-  - **keywords** (main keywords and how to use it and when you should use it)
-  - **lambda_function** (C++11 new feature of the language)
-  - **multithreading** (basic file how to run parrallel computation. "mutex" and "thread" libraries)
+  - **keywords** (main keywords and how to use it and when you should use it) [link](https://github.com/kurbakov/project_y/tree/master/cpp/keywords)
+  - **lambda_function** (C++11 new feature of the language) [link](https://github.com/kurbakov/project_y/blob/master/cpp/lambda_function/main.cpp)
+  - **multithreading** (very basic file how to run parrallel computation. "mutex" and "thread" libraries) [link](https://github.com/kurbakov/project_y/blob/master/cpp/multithreading/multithreading.cpp)
 
 ## YANDEX_TASK
-  - this is my solution of the task from Yandex Inc.
+(this is my solution of the task from Yandex Inc.)
+  - task 1: [link](https://github.com/kurbakov/project_y/tree/master/yandex_task/task1)
+  - task 2: [link](https://github.com/kurbakov/project_y/tree/master/yandex_task/task2)
+  - task 3: [link](https://github.com/kurbakov/project_y/tree/master/yandex_task/task3)
+  - task 4: [link](https://github.com/kurbakov/project_y/tree/master/yandex_task/task4)
 
 
 ## next steps 
