@@ -72,18 +72,18 @@ CODILITY: directory to store the solution of codility tasks
     | -- NailingPlanks [task](https://codility.com/programmers/lessons/14-binary_search_algorithm/nailing_planks/), [solution](https://github.com/kurbakov/project_y/blob/master/codility/lesson14/NailingPlanks.cpp)  
     
   - lesson15: Caterpillar method [PDF](https://codility.com/media/train/13-CaterpillarMethod.pdf)  
-    | -- CountDistinctSlices [task](https://codility.com/programmers/lessons/15-caterpillar_method/count_distinct_slices/), [solution]()  
-    | -- AbsDistinct [task](https://codility.com/programmers/lessons/15-caterpillar_method/abs_distinct/), [solution]()  
-    | -- CountTriangles [task](https://codility.com/programmers/lessons/15-caterpillar_method/count_triangles/), [solution]()  
-    | -- MinAbsSumOfTwo [task](https://codility.com/programmers/lessons/15-caterpillar_method/min_abs_sum_of_two/), [solution]()  
+    | -- CountDistinctSlices [task](https://codility.com/programmers/lessons/15-caterpillar_method/count_distinct_slices/), [solution](https://github.com/kurbakov/project_y/blob/master/codility/lesson15/CountDistinctSlices.cpp)  
+    | -- AbsDistinct [task](https://codility.com/programmers/lessons/15-caterpillar_method/abs_distinct/), [solution](https://github.com/kurbakov/project_y/blob/master/codility/lesson15/AbsDistinct.cpp)  
+    | -- CountTriangles [task](https://codility.com/programmers/lessons/15-caterpillar_method/count_triangles/), [solution](https://github.com/kurbakov/project_y/blob/master/codility/lesson15/CountTriangles.cpp)  
+    | -- MinAbsSumOfTwo [task](https://codility.com/programmers/lessons/15-caterpillar_method/min_abs_sum_of_two/), [solution](https://github.com/kurbakov/project_y/blob/master/codility/lesson15/MinAbsSumOfTwo.cpp)  
     
   - lesson16: Greedy algorithms [PDF](https://codility.com/media/train/14-GreedyAlgorithms.pdf)  
-    | -- MaxNonoverlappingSegments [task](https://codility.com/programmers/lessons/16-greedy_algorithms/max_nonoverlapping_segments/), [solution]()  
-    | -- TieRopes [task](https://codility.com/programmers/lessons/16-greedy_algorithms/tie_ropes/), [solution]()  
+    | -- MaxNonoverlappingSegments [task](https://codility.com/programmers/lessons/16-greedy_algorithms/max_nonoverlapping_segments/), [solution](https://github.com/kurbakov/project_y/blob/master/codility/lesson16/MaxNonoverlappingSegments.cpp)  
+    | -- TieRopes [task](https://codility.com/programmers/lessons/16-greedy_algorithms/tie_ropes/), [solution](https://github.com/kurbakov/project_y/blob/master/codility/lesson16/TieRopes.cpp)  
     
   - lesson17: Dynamic programming [PDF](https://codility.com/media/train/15-DynamicProgramming.pdf)  
-    | -- NumberSolitaire [task](https://codility.com/programmers/lessons/17-dynamic_programming/number_solitaire/), [solution]()  
-    | -- MinAbsSum [task](https://codility.com/programmers/lessons/17-dynamic_programming/min_abs_sum/), [solution]()  
+    | -- NumberSolitaire [task](https://codility.com/programmers/lessons/17-dynamic_programming/number_solitaire/), [solution](https://github.com/kurbakov/project_y/blob/master/codility/lesson17/NumberSolitaire.cpp)  
+    | -- MinAbsSum [task](https://codility.com/programmers/lessons/17-dynamic_programming/min_abs_sum/), [solution](https://github.com/kurbakov/project_y/blob/master/codility/lesson17/MinAbsSum.cpp)  
   
 CPP:
 
