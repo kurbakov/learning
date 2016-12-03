@@ -86,19 +86,30 @@
 ## CPP: directory to learn C++
   
   - **algorithms** (path to store ome basic algorithms)  
-    | - sorting algorithms [link](https://github.com/kurbakov/project_y/tree/master/cpp/algorithms/sort)  
-    | - search algorithm [link](https://github.com/kurbakov/project_y/tree/master/cpp/algorithms/search)  
+    | - sorting algorithms  
+        -> bubble_sort [link](https://github.com/kurbakov/project_y/tree/master/cpp/algorithms/sort/bubble_sort.cpp)  
+        -> count_sort [link](https://github.com/kurbakov/project_y/tree/master/cpp/algorithms/sort/count_sort.cpp)  
+        -> heap_sort [link](https://github.com/kurbakov/project_y/tree/master/cpp/algorithms/sort/heap_sort.cpp)  
+        -> insertion_sort [link](https://github.com/kurbakov/project_y/tree/master/cpp/algorithms/sort/insertion_sort.cpp)  
+        -> merge_sort [link](https://github.com/kurbakov/project_y/tree/master/cpp/algorithms/sort/merge_sort.cpp)  
+        -> quick_sort [link](https://github.com/kurbakov/project_y/tree/master/cpp/algorithms/sort/quick_sort.cpp)  
+        -> redix_sort [link](https://github.com/kurbakov/project_y/tree/master/cpp/algorithms/sort/redix_sort.cpp)  
+        -> selection_sort [link](https://github.com/kurbakov/project_y/tree/master/cpp/algorithms/sort/selection_sort.cpp)  
+        -> shell_sort [link](https://github.com/kurbakov/project_y/tree/master/cpp/algorithms/sort/shell_sort.cpp)
+        
+    | - search algorithm  
+        -> binary_search [link](https://github.com/kurbakov/project_y/tree/master/cpp/algorithms/search/binary_search.cpp)  
     
   - **data_structure** (path to store main data types. created to better understand the data types)  
-    | - graph [link]()  
-    | - hash_table [link]()  
-    | - heap [link]()  
-    | - inheritance [link]()  
-    | - list [link]()  
-    | - operators_overloading [link]()  
-    | - set_map [link]()  
-    | - smart_pointer [link]()  
-    | - stack_queue [link]()  
+    | - graph [link](https://github.com/kurbakov/project_y/tree/master/cpp/data_structure/graph)  
+    | - hash_table [link](https://github.com/kurbakov/project_y/tree/master/cpp/data_structure/hash_table)  
+    | - heap [link](https://github.com/kurbakov/project_y/tree/master/cpp/data_structure/heap)  
+    | - inheritance [link](https://github.com/kurbakov/project_y/tree/master/cpp/data_structure/inheritance)  
+    | - list [link](https://github.com/kurbakov/project_y/tree/master/cpp/data_structure/list)  
+    | - operators_overloading [link](https://github.com/kurbakov/project_y/tree/master/cpp/data_structure/operators_overloading)  
+    | - set_map [link](https://github.com/kurbakov/project_y/tree/master/cpp/data_structure/set_map)  
+    | - smart_pointer [link](https://github.com/kurbakov/project_y/tree/master/cpp/data_structure/smart_pointer)  
+    | - stack_queue [link](https://github.com/kurbakov/project_y/tree/master/cpp/data_structure/stack_queue)  
     
   - **delegation** (how to implement a deligation inside the class OOP consept)
   - **design_patterns** (different desing patterns, also related to OOP)
@@ -107,7 +118,7 @@
   - **multithreading** (dasic file how to run parrallel computation. "mutex" and "thread" libraries)
 
 ## YANDEX_TASK
-
+  - this is my solution of the task from Yandex Inc.
 
 
 next steps 
