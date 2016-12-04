@@ -100,6 +100,11 @@
     | - search algorithm  
         -> binary_search [link](https://github.com/kurbakov/project_y/tree/master/cpp/algorithms/search/binary_search.cpp)  
     
+    | - other  
+        -> polish_notation.cpp [link](https://github.com/kurbakov/project_y/blob/master/cpp/algorithms/other/polish_notation.cpp)  
+        -> reverse_polish_notation [link](https://github.com/kurbakov/project_y/blob/master/cpp/algorithms/other/reverse_polish_notation.cpp)  
+        -> shunting_yard_algorithm [link](https://github.com/kurbakov/project_y/blob/master/cpp/algorithms/other/shunting_yard_algorithm.cpp)  
+    
   - **data_structure** (path to store main data types. created to better understand the data types)  
     | - graph [link](https://github.com/kurbakov/project_y/tree/master/cpp/data_structure/graph)  
     | - hash_table [link](https://github.com/kurbakov/project_y/tree/master/cpp/data_structure/hash_table)  
