@@ -117,7 +117,7 @@
     | - stack_queue [link](https://github.com/kurbakov/project_y/tree/master/cpp/data_structure/stack_queue)  
     
   - **delegation** (how to implement a deligation inside the class OOP consept)
-  - **design_patterns** (different desing patterns, also related to OOP)
+  - **design_patterns** (different desing patterns, also related to OOP)  
     | - behavioral_pattern  
       -> chain_of_responsibility [link](https://github.com/kurbakov/project_y/blob/master/cpp/design_patterns/behavioral_pattern/chain_of_responsibility.cpp)  
       -> command [link](https://github.com/kurbakov/project_y/blob/master/cpp/design_patterns/behavioral_pattern/command.cpp)  
