@@ -104,6 +104,12 @@
         -> polish_notation.cpp [link](https://github.com/kurbakov/project_y/blob/master/cpp/algorithms/other/polish_notation.cpp)  
         -> reverse_polish_notation [link](https://github.com/kurbakov/project_y/blob/master/cpp/algorithms/other/reverse_polish_notation.cpp)  
         -> shunting_yard_algorithm [link](https://github.com/kurbakov/project_y/blob/master/cpp/algorithms/other/shunting_yard_algorithm.cpp)  
+        -> graph breadth first search [link](https://github.com/kurbakov/project_y/blob/master/cpp/algorithms/other/graph_bfs.cpp)  
+        -> graph deapth first search [link](https://github.com/kurbakov/project_y/blob/master/cpp/algorithms/other/graph_dfs.cpp)  
+        -> graph strong connected components [link](https://github.com/kurbakov/project_y/blob/master/cpp/algorithms/other/graph_scc.cpp)  
+        -> graph minimum spanning tree [link](https://github.com/kurbakov/project_y/blob/master/cpp/algorithms/other/graph_mst.cpp)  
+        -> graph shortest path [link](https://github.com/kurbakov/project_y/blob/master/cpp/algorithms/other/graph_shortest_path.cpp)  
+        -> graph topological sort [link](https://github.com/kurbakov/project_y/blob/master/cpp/algorithms/other/graph_topological_sort.cpp)  
     
   - **data_structure** (path to store main data types. created to better understand the data types)  
     | - graph [link](https://github.com/kurbakov/project_y/tree/master/cpp/data_structure/graph)  
