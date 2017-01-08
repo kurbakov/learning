@@ -156,6 +156,7 @@
   - **keywords** (main keywords and how to use it and when you should use it) [link](https://github.com/kurbakov/project_y/tree/master/cpp/keywords)
   - **lambda_function** (C++11 new feature of the language) [link](https://github.com/kurbakov/project_y/blob/master/cpp/lambda_function/main.cpp)
   - **multithreading** (very basic file how to run parrallel computation. "mutex" and "thread" libraries) [link](https://github.com/kurbakov/project_y/blob/master/cpp/multithreading/multithreading.cpp)
+  - **unit test** (Google test framework)[link](https://github.com/kurbakov/project_y/tree/master/cpp/unit_tests)
 
 ## YANDEX_TASK
 (this is my solution of the task from Yandex Inc.)
