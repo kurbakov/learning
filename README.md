@@ -98,7 +98,7 @@
         -> shell_sort [link](https://github.com/kurbakov/project_y/tree/master/cpp/algorithms/sort/shell_sort.cpp)
         
     | - search algorithm  
-        -> binary_search [link](https://github.com/kurbakov/project_y/tree/master/cpp/algorithms/search/binary_search.cpp)  
+        -> binary_search [link](https://github.com/kurbakov/project_y/blob/master/cpp/algorithms/search/binary_search_clean.cpp)  
     
     | - other  
         -> polish_notation.cpp [link](https://github.com/kurbakov/project_y/blob/master/cpp/algorithms/other/polish_notation.cpp)  
