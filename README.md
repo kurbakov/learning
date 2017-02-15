@@ -1,5 +1,11 @@
 # The structure on the GIT:
 
+## next steps 
+- GoogleTest framework (improve makefile and create template project with test)
+- Qt framework
+  - Tutorial http://zetcode.com/gui/qt5/
+  - Main libraries: http://doc.qt.io/qt-5/qtmodules.html and http://doc.qt.io/qt-5/overviews.html 
+
 ## CODILITY: directory to store the solution of codility tasks
 
   - **lesson1**: Iterations [PDF](https://codility.com/media/train/Iterations.pdf)  
@@ -164,17 +170,3 @@
   - task 2: [link](https://github.com/kurbakov/project_y/tree/master/yandex_task/task2)
   - task 3: [link](https://github.com/kurbakov/project_y/tree/master/yandex_task/task3)
   - task 4: [link](https://github.com/kurbakov/project_y/tree/master/yandex_task/task4)
-
-
-## next steps 
-- metaprogramming
-- multiproc. computations and multithreading
-- boost library
-
-
-/*======================================*/  
-notes:
-- https://habrahabr.ru/company/yandex/blog/206234/
-- https://en.wikipedia.org/wiki/LR_parser
-- http://it.icmp.ru/post/view/4549):
-- https://xakep.ru/2014/02/14/jobinterview-tasks-181/
