@@ -1,5 +1,11 @@
 # The structure on the GIT:
 
+## next steps 
+- GoogleTest framework (improve makefile and create template project with test)
+- Qt framework
+  - Tutorial http://zetcode.com/gui/qt5/
+  - Main libraries: http://doc.qt.io/qt-5/qtmodules.html and http://doc.qt.io/qt-5/overviews.html 
+
 ## CODILITY: directory to store the solution of codility tasks
 
   - **lesson1**: Iterations [PDF](https://codility.com/media/train/Iterations.pdf)  
@@ -98,7 +104,7 @@
         -> shell_sort [link](https://github.com/kurbakov/project_y/tree/master/cpp/algorithms/sort/shell_sort.cpp)
         
     | - search algorithm  
-        -> binary_search [link](https://github.com/kurbakov/project_y/tree/master/cpp/algorithms/search/binary_search.cpp)  
+        -> binary_search [link](https://github.com/kurbakov/project_y/blob/master/cpp/algorithms/search/binary_search_clean.cpp)  
     
     | - other  
         -> polish_notation.cpp [link](https://github.com/kurbakov/project_y/blob/master/cpp/algorithms/other/polish_notation.cpp)  
@@ -156,6 +162,7 @@
   - **keywords** (main keywords and how to use it and when you should use it) [link](https://github.com/kurbakov/project_y/tree/master/cpp/keywords)
   - **lambda_function** (C++11 new feature of the language) [link](https://github.com/kurbakov/project_y/blob/master/cpp/lambda_function/main.cpp)
   - **multithreading** (very basic file how to run parrallel computation. "mutex" and "thread" libraries) [link](https://github.com/kurbakov/project_y/blob/master/cpp/multithreading/multithreading.cpp)
+  - **unit test** (Google test framework)[link](https://github.com/kurbakov/project_y/tree/master/cpp/unit_tests)
 
 ## YANDEX_TASK
 (this is my solution of the task from Yandex Inc.)
@@ -163,17 +170,3 @@
   - task 2: [link](https://github.com/kurbakov/project_y/tree/master/yandex_task/task2)
   - task 3: [link](https://github.com/kurbakov/project_y/tree/master/yandex_task/task3)
   - task 4: [link](https://github.com/kurbakov/project_y/tree/master/yandex_task/task4)
-
-
-## next steps 
-- metaprogramming
-- multiproc. computations and multithreading
-- boost library
-
-
-/*======================================*/  
-notes:
-- https://habrahabr.ru/company/yandex/blog/206234/
-- https://en.wikipedia.org/wiki/LR_parser
-- http://it.icmp.ru/post/view/4549):
-- https://xakep.ru/2014/02/14/jobinterview-tasks-181/
