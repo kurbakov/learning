@@ -1,10 +1,11 @@
 # The structure on the GIT:
 
 ## next steps 
-- GoogleTest framework (improve makefile and create template project with test)
 - Qt framework
   - Tutorial http://zetcode.com/gui/qt5/
   - Main libraries: http://doc.qt.io/qt-5/qtmodules.html and http://doc.qt.io/qt-5/overviews.html 
+- BOOST
+  - Book https://theboostcpplibraries.com/
 
 ## CODILITY: directory to store the solution of codility tasks
 
