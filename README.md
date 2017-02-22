@@ -4,6 +4,7 @@
 - Qt framework
   - Tutorial http://zetcode.com/gui/qt5/
   - Main libraries: http://doc.qt.io/qt-5/qtmodules.html and http://doc.qt.io/qt-5/overviews.html 
+  - DBuss tutorial: https://techbase.kde.org/Development/Tutorials#D-Bus
 - BOOST
   - Book https://theboostcpplibraries.com/
 
