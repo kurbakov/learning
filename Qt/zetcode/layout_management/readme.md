@@ -19,7 +19,8 @@
   QTextEdit *ledit = new QTextEdit(this);
   ```
   - ->setGeometry(int, int, int, int);
-### QVBoxLayout/QHBoxLayout [docV]([doc](http://doc.qt.io/qt-5/QVBoxLayout.html)) [docH]([doc](http://doc.qt.io/qt-5/QHBoxLayout.html))
+
+### QVBoxLayout/QHBoxLayout [docV](http://doc.qt.io/qt-5/QVBoxLayout.html), [docH](http://doc.qt.io/qt-5/QHBoxLayout.html)
   ```c++
   QVBoxLayout *vbox = new QVBoxLayout(this);
   QHBoxLayout *hbox = new QHBoxLayout();
