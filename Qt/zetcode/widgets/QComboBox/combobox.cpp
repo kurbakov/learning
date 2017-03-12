@@ -1,4 +1,4 @@
-#include <QHBoxLayout>
+#include <QtWidgets/QHBoxLayout>
 #include "combobox.h"
 
 ComboBoxEx::ComboBoxEx(QWidget *parent)

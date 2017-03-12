@@ -1,8 +1,7 @@
-
 #pragma once
 
-#include <QWidget>
-#include <QProgressBar>
+#include <QtWidgets/QWidget>
+#include <QtWidgets/QProgressBar>
 #include <QPushButton>
 
 class ProgressBarEx : public QWidget {

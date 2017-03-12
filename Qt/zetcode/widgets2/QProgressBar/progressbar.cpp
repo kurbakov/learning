@@ -1,4 +1,4 @@
-#include <QProgressBar>
+#include <QtWidgets/QProgressBar>
 #include <QTimer>
 #include <QGridLayout>
 #include "progressbar.h"

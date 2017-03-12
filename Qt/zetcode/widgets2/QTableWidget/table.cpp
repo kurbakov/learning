@@ -1,5 +1,5 @@
-#include <QHBoxLayout>
-#include <QTableWidget>
+#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QTableWidget>
 #include "table.h"
 
 Table::Table(QWidget *parent)

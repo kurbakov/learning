@@ -1,6 +1,6 @@
 #pragma once
 
-#include <QWidget>
+#include <QtWidgets/QWidget>
 
 class CheckBox : public QWidget {
     

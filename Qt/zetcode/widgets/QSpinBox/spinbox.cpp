@@ -1,5 +1,5 @@
-#include <QHBoxLayout>
-#include <QLabel>
+#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QLabel>
 #include "spinbox.h"
 
 SpinBox::SpinBox(QWidget *parent)

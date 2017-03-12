@@ -1,4 +1,4 @@
-#include <QVBoxLayout>
+#include <QtWidgets/QVBoxLayout>
 #include <QFont>
 #include "label.h"
 

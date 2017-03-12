@@ -1,4 +1,4 @@
-#include <QHBoxLayout>
+#include <QtWidgets/QHBoxLayout>
 #include "slider.h"
 
 Slider::Slider(QWidget *parent)

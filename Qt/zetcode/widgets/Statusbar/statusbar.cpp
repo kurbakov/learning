@@ -1,7 +1,7 @@
-#include <QLabel>
-#include <QFrame>
-#include <QStatusBar>
-#include <QHBoxLayout>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QFrame>
+#include <QtWidgets/QStatusBar>
+#include <QtWidgets/QHBoxLayout>
 #include "statusbar.h"
 
 Statusbar::Statusbar(QWidget *parent)

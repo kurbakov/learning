@@ -1,8 +1,8 @@
 #pragma once
 
-#include <QWidget>
-#include <QSlider>
-#include <QLabel>
+#include <QtWidgets/QWidget>
+#include <QtWidgets/QSlider>
+#include <QtWidgets/QLabel>
 
 class Slider : public QWidget {
     

@@ -1,5 +1,5 @@
-#include <QCheckBox>
-#include <QHBoxLayout>
+#include <QtWidgets/QCheckBox>
+#include <QtWidgets/QHBoxLayout>
 #include "checkbox.h"
 
 CheckBox::CheckBox(QWidget *parent)

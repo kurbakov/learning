@@ -1,5 +1,5 @@
-#include <QDesktopWidget>
-#include <QApplication>
+#include <QtWidgets/QDesktopWidget>
+#include <QtWidgets/QApplication>
 #include "splitter.h"
 
 int main(int argc, char *argv[]) {

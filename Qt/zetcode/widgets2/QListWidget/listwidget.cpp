@@ -1,6 +1,6 @@
 #include "listwidget.h"
-#include <QVBoxLayout>
-#include <QInputDialog>
+#include <QtWidgets/QVBoxLayout>
+#include <QtWidgets/QInputDialog>
 
 ListWidget::ListWidget(QWidget *parent)
     : QWidget(parent) {

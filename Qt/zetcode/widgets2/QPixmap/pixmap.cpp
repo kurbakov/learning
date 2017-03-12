@@ -1,6 +1,6 @@
 #include <QPixmap>
-#include <QLabel>
-#include <QHBoxLayout>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QHBoxLayout>
 #include "pixmap.h"
 
 Pixmap::Pixmap(QWidget *parent)

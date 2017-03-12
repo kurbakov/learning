@@ -1,8 +1,8 @@
 #pragma once
 
-#include <QWidget>
+#include <QtWidgets/QWidget>
 #include <QPushButton>
-#include <QListWidget>
+#include <QtWidgets/QListWidget>
 
 class ListWidget : public QWidget {
     

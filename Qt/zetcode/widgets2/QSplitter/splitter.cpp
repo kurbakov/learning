@@ -1,6 +1,6 @@
 #include <QFrame>
-#include <QSplitter>
-#include <QHBoxLayout>
+#include <QtWidgets/QSplitter>
+#include <QtWidgets/QHBoxLayout>
 #include "splitter.h"
 
 Splitter::Splitter(QWidget *parent)

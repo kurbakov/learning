@@ -1,4 +1,4 @@
-#include <QApplication>
+#include <QtWidgets/QApplication>
 #include "pixmap.h"
 
 int main(int argc, char *argv[]) {

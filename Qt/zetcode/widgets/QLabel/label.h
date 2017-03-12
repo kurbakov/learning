@@ -1,7 +1,7 @@
 #pragma once
 
-#include <QWidget>
-#include <QLabel>
+#include <QtWidgets/QWidget>
+#include <QtWidgets/QLabel>
 
 class Label : public QWidget {
 

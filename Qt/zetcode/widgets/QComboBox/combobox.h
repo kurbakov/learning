@@ -1,8 +1,8 @@
 #pragma once
 
-#include <QWidget>
-#include <QComboBox>
-#include <QLabel>
+#include <QtWidgets/QWidget>
+#include <QtWidgets/QComboBox>
+#include <QtWidgets/QLabel>
 
 class ComboBoxEx : public QWidget {
     

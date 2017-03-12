@@ -1,7 +1,7 @@
 #pragma once
 
-#include <QWidget>
-#include <QSpinBox>
+#include <QtWidgets/QWidget>
+#include <QtWidgets/QSpinBox>
 
 class SpinBox : public QWidget {
     

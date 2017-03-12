@@ -1,6 +1,6 @@
-#include <QGridLayout>
-#include <QLabel>
-#include <QLineEdit>
+#include <QtWidgets/QGridLayout>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
 #include "ledit.h"
 
 Ledit::Ledit(QWidget *parent)
