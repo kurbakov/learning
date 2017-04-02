@@ -1,6 +1,8 @@
 ### The order of lessons:
+Link to the tutorial: http://zetcode.com/gui/qt5/
 
 1. Introduction
+
 2. Strings
   - QString
   - QСhar
