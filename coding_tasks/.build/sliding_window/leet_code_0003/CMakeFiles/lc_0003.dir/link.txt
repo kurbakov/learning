@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/lc_0003.dir/main.cpp.o -o lc_0003 

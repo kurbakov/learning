@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/lc_0202.dir/main.cpp.o -o lc_0202 

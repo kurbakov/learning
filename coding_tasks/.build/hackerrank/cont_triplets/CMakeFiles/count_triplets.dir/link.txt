@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/count_triplets.dir/main.cpp.o -o count_triplets 

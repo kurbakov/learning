@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/bits_op.dir/bits_op.cpp.o -o bits_op 

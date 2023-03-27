@@ -1,0 +1,169 @@
+{
+	"inputs" : 
+	[
+		{
+			"path" : "CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : ".build/CMakeFiles/3.22.1/CMakeSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : ".build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.22/Modules/Platform/Linux.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.22/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"path" : "warmup/CMakeLists.txt"
+		},
+		{
+			"path" : "graph/CMakeLists.txt"
+		},
+		{
+			"path" : "bits_op/CMakeLists.txt"
+		},
+		{
+			"path" : "sliding_window/CMakeLists.txt"
+		},
+		{
+			"path" : "sliding_window/leet_code_0003/CMakeLists.txt"
+		},
+		{
+			"path" : "sliding_window/leet_code_0560/CMakeLists.txt"
+		},
+		{
+			"path" : "fast_and_slow_ptr/CMakeLists.txt"
+		},
+		{
+			"path" : "fast_and_slow_ptr/leet_code_0141/CMakeLists.txt"
+		},
+		{
+			"path" : "fast_and_slow_ptr/leet_code_0142/CMakeLists.txt"
+		},
+		{
+			"path" : "fast_and_slow_ptr/leet_code_0202/CMakeLists.txt"
+		},
+		{
+			"path" : "fast_and_slow_ptr/leet_code_0876/CMakeLists.txt"
+		},
+		{
+			"path" : "cyclic_sort/CMakeLists.txt"
+		},
+		{
+			"path" : "cyclic_sort/leet_code_0268/CMakeLists.txt"
+		},
+		{
+			"path" : "cyclic_sort/leet_code_0287/CMakeLists.txt"
+		},
+		{
+			"path" : "two_heaps/CMakeLists.txt"
+		},
+		{
+			"path" : "two_heaps/leet_code_0295/CMakeLists.txt"
+		},
+		{
+			"path" : "substring/CMakeLists.txt"
+		},
+		{
+			"path" : "substring/leet_code_0459/CMakeLists.txt"
+		},
+		{
+			"path" : "linked_list/CMakeLists.txt"
+		},
+		{
+			"path" : "linked_list/leet_code_0146/CMakeLists.txt"
+		},
+		{
+			"path" : "threads/CMakeLists.txt"
+		},
+		{
+			"path" : "hackerrank/CMakeLists.txt"
+		},
+		{
+			"path" : "hackerrank/fraudulent_activity_notifications/CMakeLists.txt"
+		},
+		{
+			"path" : "hackerrank/cont_triplets/CMakeLists.txt"
+		}
+	],
+	"kind" : "cmakeFiles",
+	"paths" : 
+	{
+		"build" : "/home/kurbakov/cmake_playground/.build",
+		"source" : "/home/kurbakov/cmake_playground"
+	},
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}
